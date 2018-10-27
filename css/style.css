@@ -37,13 +37,18 @@ body{
   grid-template-rows: 1fr 2fr;
 }
 
-.profil div{
-  border: 2px solid white;
-}
 
 .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 ;
   grid-row: 1;
+}
+
+.info li{
+  margin-bottom: 10px;
+  font-size: 25px;
 }
 
 .name{
@@ -62,11 +67,29 @@ body{
   border-radius: 100px;
   grid-column : 3;
   grid-row: 1;
+  margin: 15px 15px 0px 0px ;
+  
 }
 
 .description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 /span 3;
   grid-row: 2;
+}
+
+.description p{
+  margin: 20px 80px 0px 80px;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.letter{
+  margin-left: 20px;
+  font-size: 30px;
 }
 
 
@@ -89,6 +112,7 @@ body{
   margin: 0px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 
